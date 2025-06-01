@@ -1,4 +1,3 @@
-
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
@@ -8,11 +7,11 @@ const Testimonials = () => {
   const testimonials = [
     {
       rating: 5,
-      quote: "Gracias a Sumaq Tree, logramos reducir en un 20% el uso de agua en nuestras fincas y estamos en proceso de obtener la certificación Rainforest Alliance. Es una inversión que genera impacto y rentabilidad.",
-      name: "Rosa Gutiérrez",
-      position: "Gerente de Producción",
-      company: "Agroexportadora El Bosque",
-      initials: "RG",
+      quote: "Antes teníamos que anotar todo en cuadernos y era imposible rastrear el uso real de recursos. Ahora el sistema nos avisa automáticamente si hay variaciones y podemos mostrar los reportes a los certificadores de manera instantánea. Es una tranquilidad enorme saber que todo está documentado correctamente.",
+      name: "Luis Peña",
+      position: "Administrador",
+      company: "Finca Rosenheim",
+      initials: "LP",
       stats: {
         water: "20%",
         productivity: "15%",
@@ -21,20 +20,33 @@ const Testimonials = () => {
     },
     {
       rating: 5,
-      quote: "La implementación de Sumaq Tree transformó completamente nuestra operación. Los datos en tiempo real nos permiten tomar decisiones más inteligentes y hemos mejorado significativamente nuestra sostenibilidad.",
+      quote: "Perdíamos mucho tiempo generando reportes manualmente y siempre había errores humanos. Con Sumaq Tree, los datos se capturan automáticamente y los reportes salen perfectos. Nuestros clientes internacionales ahora confían completamente en nuestra operación.",
+      name: "Rosa Gutiérrez",
+      position: "Gerente de Producción",
+      company: "Agroexportadora El Bosque",
+      initials: "RG",
+      stats: {
+        water: "22%",
+        productivity: "18%",
+        accuracy: "97%"
+      }
+    },
+    {
+      rating: 5,
+      quote: "No teníamos visibilidad real de lo que pasaba en el campo hasta el final del día. Ahora recibimos alertas en tiempo real y podemos actuar inmediatamente si algo no está bien. La diferencia en productividad es increíble.",
       name: "Carlos Mendoza",
       position: "Director de Operaciones",
       company: "FreshFruit Export S.A.",
       initials: "CM",
       stats: {
         water: "18%",
-        productivity: "22%",
-        accuracy: "97%"
+        productivity: "25%",
+        accuracy: "96%"
       }
     },
     {
       rating: 5,
-      quote: "Lo que más me impresiona es la facilidad de uso y la precisión de los datos. Sumaq Tree nos ayudó a obtener la certificación orgánica en tiempo récord y nuestros clientes europeos están muy satisfechos.",
+      quote: "El proceso de certificación orgánica era una pesadilla de documentos y verificaciones. Sumaq Tree automatizó todo el proceso de trazabilidad y obtuvimos la certificación en tiempo récord. Los auditores quedaron impresionados con la precisión de nuestros datos.",
       name: "María Elena Vargas",
       position: "Gerente de Calidad",
       company: "Organic Valley Peru",
@@ -42,12 +54,12 @@ const Testimonials = () => {
       stats: {
         water: "25%",
         productivity: "19%",
-        accuracy: "96%"
+        accuracy: "99%"
       }
     },
     {
       rating: 5,
-      quote: "Desde que usamos Sumaq Tree, nuestros reportes de sostenibilidad son impecables. La plataforma automatiza todo el proceso de documentación y nos da la tranquilidad de cumplir con estándares internacionales.",
+      quote: "Antes gastábamos semanas preparando informes de sostenibilidad y nunca estábamos seguros de su exactitud. Ahora todo se genera automáticamente con datos verificables. Es como tener un equipo de analistas trabajando 24/7 para nosotros.",
       name: "Jorge Ramírez",
       position: "Jefe de Sostenibilidad",
       company: "EcoFarms International",
@@ -60,7 +72,7 @@ const Testimonials = () => {
     },
     {
       rating: 5,
-      quote: "La inversión en Sumaq Tree se pagó sola en menos de 8 meses. El ahorro en recursos y la eficiencia operativa que logramos es extraordinaria. Ahora somos referente en agricultura sostenible.",
+      quote: "Nuestros costos operativos eran demasiado altos y no sabíamos exactamente dónde optimizar. Con Sumaq Tree identificamos todas las ineficiencias y la inversión se pagó sola en menos de 8 meses. Ahora somos el benchmark en agricultura sostenible.",
       name: "Ana Sofía Torres",
       position: "CEO",
       company: "Green Harvest Corp",
@@ -73,7 +85,7 @@ const Testimonials = () => {
     },
     {
       rating: 5,
-      quote: "Sumaq Tree nos permitió digitalizar completamente nuestros procesos. Los sensores IoT y la plataforma de análisis nos dieron una ventaja competitiva enorme en el mercado internacional.",
+      quote: "Teníamos procesos completamente analógicos y perdíamos competitividad frente a empresas más tecnificadas. Sumaq Tree nos digitalizó completamente y ahora tenemos una ventaja competitiva enorme en mercados internacionales. La transformación fue total.",
       name: "Fernando López",
       position: "Director Técnico",
       company: "AgriTech Solutions",
@@ -82,6 +94,45 @@ const Testimonials = () => {
         water: "21%",
         productivity: "17%",
         accuracy: "99%"
+      }
+    },
+    {
+      rating: 5,
+      quote: "Constantemente teníamos problemas con el desperdicio de agua y no podíamos cumplir estándares ambientales. Ahora tenemos control total del consumo y hemos reducido el desperdicio significativamente. Sentimos que finalmente somos una empresa responsable.",
+      name: "Patricia Herrera",
+      position: "Coordinadora Ambiental",
+      company: "Valle Verde Exports",
+      initials: "PH",
+      stats: {
+        water: "30%",
+        productivity: "16%",
+        accuracy: "95%"
+      }
+    },
+    {
+      rating: 5,
+      quote: "Los trabajadores perdían mucho tiempo llenando formatos y reportes a mano. Con Sumaq Tree, todo se registra automáticamente desde el campo y el equipo puede enfocarse en lo que realmente importa: cuidar los cultivos. La moral del equipo mejoró notablemente.",
+      name: "Roberto Silva",
+      position: "Jefe de Campo",
+      company: "Campos del Norte",
+      initials: "RS",
+      stats: {
+        water: "19%",
+        productivity: "24%",
+        accuracy: "96%"
+      }
+    },
+    {
+      rating: 5,
+      quote: "Teníamos problemas graves de comunicación entre el campo y la oficina, lo que causaba retrasos y errores costosos. Sumaq Tree conectó toda la operación en tiempo real. Ahora tomamos decisiones basadas en datos precisos y actuales.",
+      name: "Isabella Morales",
+      position: "Gerente General",
+      company: "Frutas Premium del Sur",
+      initials: "IM",
+      stats: {
+        water: "17%",
+        productivity: "21%",
+        accuracy: "97%"
       }
     }
   ];
