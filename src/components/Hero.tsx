@@ -45,43 +45,45 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-forest-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 shadow-xl backdrop-blur-sm"
+                className="border-2 border-white text-forest-800 hover:bg-white hover:text-forest-800 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 shadow-xl backdrop-blur-sm"
               >
                 Conoce cómo optimizar en 5 minutos
               </Button>
             </div>
 
             {/* Beneficios Rápidos */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 pb-8">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-white" />
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 pb-8 max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">
+                      Reduce costos
+                    </h3>
+                    <p className="text-sm text-white/80">Hasta 20% menos agua</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-white">
-                    Reduce costos
-                  </h3>
-                  <p className="text-sm text-white/80">Hasta 20% menos agua</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <Leaf className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">Certifica</h3>
+                    <p className="text-sm text-white/80">
+                      Estándares internacionales
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <Leaf className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Certifica</h3>
-                  <p className="text-sm text-white/80">
-                    Estándares internacionales
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                  <Smartphone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Monitorea</h3>
-                  <p className="text-sm text-white/80">En tiempo real</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <Smartphone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">Monitorea</h3>
+                    <p className="text-sm text-white/80">En tiempo real</p>
+                  </div>
                 </div>
               </div>
             </div>
